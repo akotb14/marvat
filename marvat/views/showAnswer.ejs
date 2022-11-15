@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>كوين الاحياء والچيولوچيا</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <link rel="stylesheet" href="../show answer/style.css" />
+  </head>
+  <body>
+    <div class="quizContainer container-fluid well well-lg">
+      <div id="quiz1" class="text-center">
+        <h2
+          style="color: #d14040; position: center; left: 80%; top: 0%"
+          align="Center"
+        >
+          نموذج الاجابه
+          <br />
+        </h2>
+      </div>
+      <% for(let i =0;i< data['quiz'].length ; i++){ %> 
+      <div class="quiz-container">
+        <div class="question-number">
+          <h3>
+            <%=data['quiz'][i]['question'] %>  <span class="question-num-value"></span>
+          </h3>
+        </div>
+        <br />
+        <br />
+        <br />
+        <section>
+          <div class="options">
+            <%for(j of data['quiz'][i].answer[0] ) {%> 
+              <% if(j != ''){ %> 
+            <div class="options" ><%=j %> </div>
+            <% } %>
+            <% } %> 
+          </div>
+        </section>
+        <div class="answer">
+          الاجابه الصحيحه <span><b><%=data['quiz'][i]['correctAnswer'] %></b></span>
+        </div>
+        
+      </div>
+      <% } %> 
+     
+      <script src="../../show answer/script.js"></script>
+    </div>
+  </body>
+</html>

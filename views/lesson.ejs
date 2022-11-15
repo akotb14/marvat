@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كوين الاحياء والچيولوچيا </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../../../lessons/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="../../../../lessons/img/points1.png" class="points points1" alt="" />
+        </div>
+
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <a href="/">
+                <img src="/assets/images/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <% if(data){ %> 
+      <section class="home" id="home">
+        <h1>education from home</h1>
+        <p>...غير حياتك من خلال التعليم الاونلاين</p>
+
+        <div class="shape"></div>
+        <!-- about section starts  -->
+
+        <section class="about" id="about">
+          <div class="image">
+            <div class="column-2 image">
+              <iframe
+                width="800"
+                height="500"
+                src="<%=data.lesson%>"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </section>
+      <br />
+      <br />
+
+      <h1>
+        <p class="exercise">
+          حل التدريبات
+          <a
+            rel="nofollow"
+            href="/openHomework"
+            >الواجب</a
+          >
+          &
+          <a rel="nofollow" href="/quiz/<%=data.quizId%>">
+            الكويز</a
+          >
+         
+        </p>
+      </h1>
+      <h1>
+        <p class="exercise">
+       
+          <a
+          rel="nofollow"
+          <% let pdf = ""%>
+          <%pdf = data['pdf'].split('\\')[1] || data['pdf'].split('/')[1] %>
+          href="/<%=pdf%>"
+          >Pdf</a
+        >
+        تحميل 
+        </p>
+      </h1>
+    
+      <br />
+      <br />
+      <% } %> 
+      <!-- about section ends -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4"></div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              © Copyright 2022. All Rights Reserved.
+
+              <br />Developed By:
+              <a
+                rel="nofollow"
+                href="https://www.facebook.com/profile.php?id=100011225383830"
+                >Abdelrahman</a
+              >
+              &
+              <a rel="nofollow" href="https://www.facebook.com/ahmed11mahomed">
+                Kotp</a
+              >
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow us</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a
+                  href="https://www.facebook.com/110791531658361/posts/pfbid0c69AZYrLKtQCiFQXe7t7vpaw4bi9WRtpT1SavhTNHJ1kXWonQ7bVSdpRhuVthVyTl/"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a
+                  href="#"
+                >
+                  <i class="fa fa-youtube"></i>
+                </a>
+                <a href="whatsapp://send?text=Hello!&phone=01122839310">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f05b3a1e7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../Log in mervat/style.css" />
+    <title>كوين الاحياء والچيولوچيا</title>
+    <script
+      src="https://kit.fontawesome.com/f05b3a1e7e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form method="post" class="sign-in-form">
+            <h2 class="title">تسجيل الدخول</h2>
+            <input type="hidden" name="_csrf" value="<%=csrfToken%>" />
+            <div class="input-field">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="text"
+                placeholder=" رقم الهاتف"
+                name="phoneNumber"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-unlock"></i>
+              <input
+                type="password"
+                placeholder="كلمه السر"
+                name="password"
+                required
+              />
+            </div>
+            <input type="submit" value="تسجيل الدخول" class="btn solid" />
+            <p class="social-text">تابعنا عبر المنصات الاجتماعية</p>
+            <div class="social-media">
+              <a
+                href="https://www.facebook.com/110791531658361/posts/pfbid0c69AZYrLKtQCiFQXe7t7vpaw4bi9WRtpT1SavhTNHJ1kXWonQ7bVSdpRhuVthVyTl/"
+                class="social-icon"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="whatsapp://send?text=Hello!&phone=01122839310"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </form>
+          <form method="post" class="sign-up-form">
+            <h2 class="title">سجل الان</h2>
+            <input type="hidden" name="_csrf" value="<%=csrfToken%>" />
+
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="الاسم بالكامل "
+                name="fullName"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-address-card"></i>
+              <input
+                type="text"
+                placeholder="رقم الكارت "
+                name="cardNumber"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="text"
+                placeholder="الهاتف "
+                name="phoneNumber"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-user-graduate"></i>
+              <select name="grade">
+                <option value="" class="placeholder" disabled selected hidden>
+                  الصفوف الدراسيه
+                </option>
+                <option name="grade" value="1st">الف الاول الثانوى</option>
+                <option name="grade" value="2nd">الصف الثانى الثانوى</option>
+                <option name="grade" value="3rd">الصف الثالث الثانوى</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-user-graduate"></i>
+              <select name="educetionlevel">
+                <option value="" class="placeholder" disabled selected hidden>
+                  الماده المراد الاشتراك بها
+                </option>
+                <option name="educetionlevel" value="biology">احياء</option>
+                <option name="educetionlevel" value="geology">چيولوچيا</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <i class="fa-regular fa-calendar-days"></i>
+              <select name="group" id="group">
+                <option
+                  name="group"
+                  value=""
+                  class="placeholder"
+                  disabled
+                  selected
+                  hidden
+                >
+                  Group
+                </option>
+                <option name="group" value="OnlineStudent">
+                  OnlineStudent
+                </option>
+                <option name="group" value="Monday">Monday</option>
+                <option name="group" value="Tuesday">Tuesday</option>
+                <option name="group" value="Wednesday">Wednesday</option>
+                <option name="group" value="Thursday">Thursday</option>
+                <option name="group" value="Friday">Friday</option>
+                <option name="group" value="Saturday">Saturday</option>
+                <option name="group" value="Sunday">Sunday</option>
+              </select>
+            </div>
+            <input
+              type="submit"
+              class="btn"
+              value="ارسال البيانات"
+              name="loginOnline"
+            />
+            <p class="social-text">إملئ البيانات وتواصل معنا عبر الواتساب</p>
+            <div class="social-media">
+              <a
+                href="https://www.facebook.com/110791531658361/posts/pfbid0c69AZYrLKtQCiFQXe7t7vpaw4bi9WRtpT1SavhTNHJ1kXWonQ7bVSdpRhuVthVyTl/"
+                class="social-icon"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="whatsapp://send?text=Hello!&phone=01122839310"
+                class="social-icon"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>ليس لديك حساب ؟</h3>
+            <button class="btn transparent" id="sign-up-btn">سجل الان</button>
+          </div>
+          <a href="/">
+            <img src="/assets/images/logo.png" class="image" alt="" />
+          </a>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>لديك حساب بالفعل؟</h3>
+            <button class="btn transparent" id="sign-in-btn">
+              تسجيل الدخول
+            </button>
+          </div>
+          <a href="/">
+            <img src="/assets/images/logo.png" class="image" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Log in mervat/app.js"></script>
+  </body>
+</html>

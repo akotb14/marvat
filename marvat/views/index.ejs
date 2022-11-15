@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>كوين الاحياء والچيولوچيا</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/images/logo.png" alt="" />
+                </a>
+              </div>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <% if(!name){%>
+                  
+                  <li class="scroll-to-section">
+                    <a href="/login">تسجيل الدخول</a>
+                  </li>
+                  <%}else{ %>
+                    <% if(isAdmin == "true"){%>
+                    <li>
+                      <a href="/dashboard" class="active" style="padding: 0 5px">dashboard</a>
+                    </li>
+                    <% } %>
+                      <li>
+                          <a>Hi <%=name.split(" ")[0] %> </a>
+                      </li>
+                      
+                      <li> <a href="/logout" class="active" style="padding: 0 5px"
+
+                        >Log Out</a
+    
+                      ></li>
+                 <% } %> 
+              
+
+                <li class="scroll-to-section">
+                  <div class="main-red-button"></div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div
+                  class="right-image wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <img src="/assets/images/homeee.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <h6>منصة أ/ مرڤت عبدالرحمن</h6>
+                  <h2>لشرح منهج<em> الاحياء</em> و<span>الجيولوجيا</span></h2>
+                  <p>
+                    كوين الأحياء والجيولوجيا خبرة اكثر من ٣٠ عام في الثانوية
+                    العامة
+                    <br />
+                    <%if(!name){%>
+                      <a
+                      rel="nofollow"
+                      href="/sign"
+                      target="_parent"
+                      >سجل معنا الان</a
+                      >
+                      <%} %> 
+
+                  </p>
+                </div>
+                <div class="video">
+                  <iframe
+                    width="700"
+                    height="500"
+                    src="https://www.youtube.com/embed/HCjMS_lRbvM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="left-image wow fadeIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <img src="/assets/images/admission.png" alt="person graphic" />
+            </div>
+          </div>
+          <div class="col-lg-8 align-self-center">
+            <div class="services">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="icon">
+                      <img src="/assets/images/logo.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>#</h4>
+                      <p>
+                        اختبارات وشيتات دورية بأسئلة علي النظام الجديد تختبر
+                        الفهم ونواتج التعلم نقوم بوضعها بعناية
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.7s"
+                  >
+                    <div class="icon">
+                      <img src="/assets/images/logo.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>#</h4>
+
+                      <p>
+                        تدريب الطلاب علي اسئلة الربط الطولي والعرضي الموجوده
+                        بالمنهج
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="0.9s"
+                  >
+                    <div class="icon">
+                      <img src="/assets/images/logo.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>#</h4>
+
+                      <p>مراجعه كاملة كل شهر علي ما تم شرحه سابقا</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item wow fadeIn"
+                    data-wow-duration="1s"
+                    data-wow-delay="1.1s"
+                  >
+                    <div class="icon">
+                      <img src="/assets/images/logo.png" alt="" />
+                    </div>
+                    <div class="right-text">
+                      <h4>#</h4>
+
+                      <p>شرح تفصيلي للمنهج بالنظام الحديث</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="our-portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div
+              class="section-heading wow bounceIn"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <h2>
+                <em>الصفوف</em>
+                <span>الدراسيه</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <a href="/biology/1st">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <div class="hidden-content">
+                  <h4>منهج الاحياء</h4>
+                  <p>
+                    كورسات وفيديوهات شرح منهج الاحياء للصف الدراسي الاول الثانوي
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="/assets/images/mervatr.jpg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="/biology/2nd">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.4s"
+              >
+                <div class="hidden-content">
+                  <h4>منهج الاحياء</h4>
+                  <p>
+                    كورسات وفيديوهات شرح منهج الاحياء للصف الدراسي الثاني
+                    الثانوي
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="/assets/images/mervatr.jpg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <a href="/biology/3rd">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="hidden-content">
+                  <h4>منهج الاحياء</h4>
+                  <p>
+                    كورسات وفيديوهات شرح منهج الاحياء للصف الدراسي الثالث
+                    الثانوي
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="/assets/images/mervatr.jpg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="/geology/3rd">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <div class="hidden-content">
+                  <h4>منهج الچيولوچيا</h4>
+                  <p>
+                    كورسات وفيديوهات شرح منهج الچيولوچيا للصف الدراسي الثالث
+                    الثانوي
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img src="/assets/images/mervatr.jpg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="/showQuiz">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <div class="hidden-content">
+                  <h4>كويز الحصه</h4>
+                  <p>
+                    يتم حل الكويز قبل بدايه كل حصه جديده ويجب النجاح فيه للدخول
+                    للحصه
+                  </p>
+                </div>
+                <div class="showed-content">
+                  <img
+                    src="/assets/images/undraw_book_lover_re_rwjy.svg"
+                    class="icon"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="/openExam">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <div class="hidden-content">
+                  <h4>الامتحان</h4>
+                  <p>يتم حل الامتحان مره واحده فقط عند دخولك</p>
+                </div>
+                <div class="showed-content">
+                  <img
+                    
+                    src="/assets/images/undraw_exams_g-4-ow.svg"
+                    class="icon"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="/openHomeWork">
+              <div
+                class="item wow bounceInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <div class="hidden-content">
+                  <h4>الواجب</h4>
+                  <p>يتم حل الواجب قبل الحصه للدخول</p>
+                </div>
+                <div class="showed-content">
+                  <img
+                    <img
+                    src="/assets/images/undraw_education_f8ru.svg"
+                    class="icon"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center wow fadeInLeft"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <div class="section-heading">
+              <h2>للحجز عن طريق السنتر</h2>
+              <h2>
+                <p>
+                  GLC Academy-ABOD Academy<br />
+                  سنتر Mioles ( مجموعه p11 مدينتي القاهره )
+                  <br />
+                  سنتر الامل بمدينه الشروق بالقاهرة (لاڤي مول)
+                </p>
+              </h2>
+              <div class="phone-info">
+                <h4>
+                  من خارج السويس يرجى الحجز من خلال الارقام:
+                  <span
+                    ><i class="fa fa-phone"></i>
+                    <a href="#">01093172264📲01066038495 </a></span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 wow fadeInRight"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="" action="" method="post">
+              <div class="contact-dec">
+                <img src="/assets/images/students.png" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <p>
+              © Copyright 2022. All Rights Reserved.
+
+              <br />Developed By:
+              <a
+                rel="nofollow"
+                href="https://www.facebook.com/profile.php?id=100011225383830"
+                >Abdelrahman</a
+              >
+              &
+              <a rel="nofollow" href="https://www.facebook.com/ahmed11mahomed">
+                Kotp</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+  </body>
+</html>

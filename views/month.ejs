@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>كوين الاحياء والچيولوچيا</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="../courses/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../courses/assets/css/fontawesome.css" />
+    <link
+      rel="stylesheet"
+      href="../courses/assets/css/templatemo-space-dynamic.css"
+    />
+    <link rel="stylesheet" href="../courses/assets/css/animated.css" />
+    <link rel="stylesheet" href="../courses/assets/css/owl.css" />
+    <!--
+    
+TemplateMo 562 Space Dynamic
+
+
+-->
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/images/logo.png" alt="" />
+                </a>
+              </div>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <div class="main-red-button"></div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <!-- Projects Start -->
+
+      <section class="blog section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="title" data-title="Ready for any thing">
+              <b> شهور المنهج المتاحه</b>
+            </h2>
+            <p class="text"></p>
+          </div>
+
+          <div class="blog-wrapper">
+            <% for(i of data){%> 
+            <% if(student.educetionlevel ==
+            i.educetionlevel && student.grade == i.grade) {%>
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div
+                  class="service-item wow bounceInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="blog-image">
+                    <img src="/assets/images/mervatr.jpg" alt="" />
+                  </div>
+
+                  <div class="blog-content">
+                    <div class="blog-info">
+                      <h5 class="blog-date">2023</h5>
+                    </div>
+                    <h3 class="title-sm"><%=i.month%></h3>
+                    <p class="blog-text"></p>
+                    <% if(!name){%>
+                    <a href="/Log in mervat/index.html" class="btn small"
+                      >تسجيل الان</a
+                    >
+                    <%}else{%>
+                    <a
+                      href="/lessons/<%=i.educetionlevel%>/<%=i.grade%>/<%=i.month%>"
+                      class="btn small"
+                      >دخول</a
+                    >
+                    <%} %>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <% } %>
+               <%} %>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Projects End -->
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center wow fadeInLeft"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <div class="section-heading">
+              <h2>للحجز عن طريق السنتر</h2>
+              <h2>
+                <p>
+                  GLC Academy-ABOD Academy<br />
+                  <br />
+                </p>
+              </h2>
+              <div class="phone-info">
+                <h4>
+                  من خارج السويس يرجى الحجز من خلال الارقام:
+                  <span
+                    ><i class="fa fa-phone"></i>
+                    <a href="#">01093172264📲01066038495 </a></span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 wow fadeInRight"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="" action="" method="post">
+              <div class="contact-dec">
+                <img src="/assets/images/students.png" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <p>
+              © Copyright 2022. All Rights Reserved.
+
+              <br />Developed By:
+              <a
+                rel="nofollow"
+                href="https://www.facebook.com/profile.php?id=100011225383830"
+                >Abdelrahman</a
+              >
+              &
+              <a rel="nofollow" href="https://www.facebook.com/ahmed11mahomed">
+                Kotb</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="../../courses/vendor/jquery/jquery.min.js"></script>
+    <script src="../../courses/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../courses/assets/js/owl-carousel.js"></script>
+    <script src="../../courses/assets/js/animation.js"></script>
+    <script src="../../courses/assets/js/imagesloaded.js"></script>
+    <script src="../../courses/assets/js/templatemo-custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>كوين الاحياء والچيولوچيا</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+    <link rel="stylesheet" href="../../show answer/style.css" />
+  </head>
+
+  <body>
+    <% if(!checkCount){ %> 
+    <div class="quizContainer container-fluid well well-lg">
+      <div id="quiz1" class="text-center">
+        <h2
+          style="color: #d14040; position: center; left: 80%; top: 0%"
+          align="Center"
+        >
+           الاسئله
+          <br />
+        </h2>
+       
+      </div>
+      <% for(let i =0;i< quiz['homeId']['quiz'].length ; i++){ %> 
+      <div class="quiz-container">
+        <div class="question-number">
+        
+           
+       
+          <h3>
+            <%=(i+1) %>.<%=quiz['homeId']['quiz'][i]['question'] %>  <span class="question-num-value"></span>
+          </h3>
+        </div>
+        <br />
+        <br />
+        <br />
+        <section>
+          <form method="Post" >
+          <%for(j of quiz['homeId']['quiz'][i].answer[0] ) {%> 
+          <div class="options">
+           
+              <% if(j != "" ){ %> 
+                
+            <div class="options" > <input
+              type="radio"
+              name="answer<%=i%>" 
+              value="<%=j%>" 
+            /> <%=j%> </div>
+            <% } %> 
+          
+
+          </div>
+          <% } %> 
+          <% if(i == (quiz['homeId']['quiz'].length -1)){ %> 
+            <div class="options" style="background-color: white;
+            display: flex;
+            padding: 5px;
+         
+            margin: 0;" >
+                       
+
+              <button style="background-color: brown; padding:12px 25px; color:white; border-radius: 5px; border: white none 0;">انتهاء</button>
+            </form>
+              </div>
+            <% } %> 
+        </section> 
+        
+      </div>
+      <% } %> 
+      <% }else{%>
+        <h2> you can not enter homework again</h2>
+      <%} %> 
+     
+      <script src="../../show answer/script.js"></script>
+    </div>
+  </body>
+</html>
